@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>URL shortener</title>
+    <link href='/static/bootstrap.min.css' rel='stylesheet'>
+    <link href='/static/style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>
+        URL Shortener
+      </h1>
+      <form>
+        <input id='url' name='url' placeholder='Insert the url' size='70' maxlength="2083" type='text'>
+        <button class='btn btn-primary' type='submit'>Shorten</button>
+      </form>
+      <p></p>
+      <script>
+        window.onload = function() {
+          document.getElementById('url').focus();
+        }
+      </script>
+    </div>
+  </body>
+</html>
