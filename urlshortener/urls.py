@@ -5,7 +5,8 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'shorten.views.index')
+    url(r'^$', 'shorten.views.index'),
+    url(r'^(.+)$', 'shorten.views.redirect')
     # Examples:
     # url(r'^$', 'urlshortener.views.home', name='home'),
     # url(r'^urlshortener/', include('urlshortener.foo.urls')),
